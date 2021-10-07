@@ -34,8 +34,8 @@ public class fixObj : MonoBehaviour
         {
             other.gameObject.GetComponent<Renderer>().material.color = Color.green;
             other.gameObject.AddComponent<FixedJoint>();
-            FixedJoint springJoint = other.gameObject.GetComponent<FixedJoint>();
-            springJoint.connectedBody = this.gameObject.GetComponent<Rigidbody>();
+            FixedJoint fixedJoint = other.gameObject.GetComponent<FixedJoint>();
+            fixedJoint.connectedBody = this.gameObject.GetComponent<Rigidbody>();
             
 
         }
